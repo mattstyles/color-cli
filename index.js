@@ -1,5 +1,10 @@
 var hexRgb = require( 'hex-rgb' )
-var argv = process.argv.slice( 2 )
+var argv = require( 'minimist' )( process.argv.slice( 2 ) )
 
-console.log( argv )
+argv._.forEach( hex => {
+  console.log( 'rgb( ' + hexRgb( hex ).join( ',' ) + ' )' )
+})
+
+
+
 
