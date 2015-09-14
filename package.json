@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Hex colours in, rgb colours out",
   "main": "index.js",
+  "bin": {
+    "color": "./index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
